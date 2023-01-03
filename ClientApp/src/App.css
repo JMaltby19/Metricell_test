@@ -1,0 +1,108 @@
+.App {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.container {
+	height: 100vh;
+	width: 100vw;
+}
+
+.container__form {
+	display: flex;
+	position: relative;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin: 2em;
+}
+
+.container__input {
+	display: flex;
+	margin-right: 1em;
+}
+
+.container__btnGroup {
+	display: flex;
+	position: relative;
+	justify-content: center;
+}
+
+.container__btns {
+	display: flex;
+	position: relative;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin: 1em;
+}
+
+.container__table {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+
+.table {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.tableData {
+	display: flex;
+	text-align: left;
+	padding: 0.5em 4em;
+}
+
+.table__header {
+	display: flex;
+	position: relative;
+	justify-content: center;
+}
+
+.table__details {
+	display: flex;
+	position: relative;
+	flex-direction: column;
+	align-items: center;
+	margin: 1em;
+}
+
+.table__rows {
+	display: flex;
+	padding: 1em;
+}
+
+.table__heading {
+	padding: 0 4em;
+}
+
+.paginationBtns {
+	width: 60%;
+	height: 4em;
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	margin: 4em;
+}
+
+.paginationBtns a {
+	padding: 1.2em;
+	margin: 1em;
+	border-radius: 1em;
+	border: 1px solid rgb(161, 160, 160);
+	color: rgb(161, 160, 160);
+	cursor: pointer;
+}
+
+.paginationBtns a:hover {
+	color: black;
+	background-color: rgb(161, 160, 160);
+}
+
+.paginationActive a {
+	color: white;
+	background-color: rgb(161, 160, 160);
+}

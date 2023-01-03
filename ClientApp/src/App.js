@@ -1,10 +1,13 @@
-import React, { Component } from 'react';
+import React from "react";
+import { EmployeeList } from "./EmployeeList";
+import "../src/App.css";
 
-export default class App extends Component {
-
-  render () {
-    return (
-      <div>Complete your app here</div>
-    );
-  }
-}
+export const App = () => {
+	return (
+		<div>
+			<div>
+				<EmployeeList />
+			</div>
+		</div>
+	);
+};

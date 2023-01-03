@@ -12,7 +12,7 @@ namespace InterviewTest.Controllers
         [HttpGet]
         public List<Employee> Get()
         {
-            var employees = new List<Employee>();
+            var employee = new List<Employee>();
 
             var connectionStringBuilder = new SqliteConnectionStringBuilder() { DataSource = "./SqliteDB.db" };
             using (var connection = new SqliteConnection(connectionStringBuilder.ConnectionString))
@@ -25,7 +25,7 @@ namespace InterviewTest.Controllers
                 {
                     while (reader.Read())
                     {
-                        employees.Add(new Employee
+                        employee.Add(new Employee
                         {
                             Name = reader.GetString(0),
                             Value = reader.GetInt32(1)
@@ -34,7 +34,7 @@ namespace InterviewTest.Controllers
                 }
             }
 
-            return employees;
+            return employee;
         }
     }
 }
